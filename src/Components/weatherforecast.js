@@ -19,7 +19,12 @@ export const WeatherForecast = () => {
   console.log(weatherfrcast)
   return (
     <div className="page-content page-container" id="page-content">
-
+      {loading ? (
+      <div>
+        ...loading <br />
+      <Spinner animation="border" variant="primary" />
+      </div>
+    ) :(
       
       <div className="padding">
         <div className="row container d-flex justify-content-center">
@@ -31,6 +36,6 @@ export const WeatherForecast = () => {
           </div>
         </div>
       </div>
-    </div>
+    )}</div>
   );
 };
