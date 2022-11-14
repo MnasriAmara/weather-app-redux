@@ -2,7 +2,7 @@ import { GETFORECAST_FAILED, GETFORECAST_SUCCESS, GET_WEATHER_FAILED, GET_WEATHE
 
 const initstate = {
     currentweather:[],
-    loading: false,
+    loading: true,
     erro:null,
     searchedvalue:"Gafsa",
     forecast:[]

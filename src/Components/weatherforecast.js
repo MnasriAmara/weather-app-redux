@@ -8,7 +8,6 @@ import FCard from "./FCard";
 
 export const WeatherForecast = () => {
   const dispatch = useDispatch();
-
   const loading = useSelector((state) => state.loading);
   const searchedvalue = useSelector((state) => state.searchedvalue);
 

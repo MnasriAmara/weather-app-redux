@@ -8,6 +8,7 @@ import { useSelector } from 'react-redux';
 
 function App() {
   const city=useSelector(state=>state.searchedvalue)
+  // console.log(process.env)
   return (
     <div className="App">
       <Navbarr/>
