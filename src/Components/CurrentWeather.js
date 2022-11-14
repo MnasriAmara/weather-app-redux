@@ -1,6 +1,6 @@
 import React from "react";
 import "./CurrentWeather.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getweather } from "../redux/actions/actions";
@@ -30,7 +30,7 @@ function CurrentWeather() {
           <div className="col-12 col-md-4 col-sm-12 col-xs-12">
             <div className="card p-4">
               <div className="d-flex">
-                <h4 className="flex-grow-1">{city.location.name}</h4>
+                <h4 className="flex-grow-1">{city.location&&city.location.name}</h4>
                 <h5>{city.location && city.location.localtime}</h5>
               </div>
               <div className="d-flex flex-column temp mt-5 mb-3">
